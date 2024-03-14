@@ -1,0 +1,30 @@
+<?php
+class Fruta { 
+  public $nome;
+  public $cor;
+  public $peso;
+
+  function set_nome($nome) { // função SET configura nome
+    $this->nome = $nome;
+  }
+  
+  function set_cor($cor) { // função SET configura cor
+   $this->cor = $cor;   
+  }
+  
+  function set_peso($peso) { // função SET configura peso
+   $this->peso = $peso;   
+  }
+  
+}
+
+$manga = new Fruta();
+
+$manga->set_nome('Manga Rosa'); 
+$manga->set_nome('Manga Coquinho'); //reconfigurando o atributo nome
+$manga->set_cor('Amarelo');
+$manga->set_peso('480g');
+
+
+
+?>
